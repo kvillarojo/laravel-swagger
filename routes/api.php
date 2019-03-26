@@ -18,3 +18,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::resources(['/users' => 'API\UserController']);
+// Route::get(['/users' => 'UserController@index'])->namespace('API');
+// Route::get('user', 'UserController@index')->name('profile');
